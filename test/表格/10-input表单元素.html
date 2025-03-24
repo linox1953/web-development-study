@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 表单元素</title>
+</head>
+<body>
+    <form>
+        <label for="text"> 用户名:</label> <input type="text" name="username" value="林大师" id="text"> <br>
+        <!-- password 密码框 用户看不见输入的密码 -->
+        密码: <input type="password" name="pwd"> <br>
+        <!-- radio 单选按钮 可以单词选择 -->
+        性别: <label for="man">男</label> <input type="radio" name="sex" value="man" checked="checked" id="man"> <label for="woman">女</label> <input type="radio" name="sex" value="woman" id="woman"> <br>
+        爱好: 歌唱 <input type="checkbox" value="sing"> 吃饭 <input type="checkbox" value="eat"> 攻击黑客 <input type="checkbox" value="attackHacker"> <br>
+        <!-- 点击提交按钮 可以把表单域form 中的元素 里面的值 提交给后台服务器 -->
+        <input type="submit" value="打倒黑客!">
+        <input type="reset" value="重新填写">
+        <input type="button" value="获取验证码"> <br>
+        <!-- 文件域 上传文件时使用 -->
+        上传头像：<input type="file">
+    </form>
+
+</body>
+</html>
