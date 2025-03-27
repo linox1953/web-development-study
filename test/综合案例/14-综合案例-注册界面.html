@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>林大师打倒黑客！</title>
+    <style>
+        #hacker {
+            text-decoration: line-through;
+            font-size: 10px;           
+            font-style: italic; 
+            font-weight: lighter;
+        }
+        #master {
+            font-weight: bolder;
+            font-size: 20px;
+            color: gold;
+        }
+        body {
+            /* font: font-style font-weight font-size/line-height font-family */
+            color: white;
+            background-color: black;
+        }
+        /* 标题标签比较特殊,需要单独设置标签 */
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            /* 实际开发中提倡用数字 */
+            font-weight: bolder;
+            color: #ffd700;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color: #FFD700">林大师打倒黑客捐款！</h1>
+    <!-- <h1 style="color: #FFD700">林大师打倒黑客捐款！</h1> -->
+    <h1>林大师打倒黑客捐款！</h1>
     <table>
         <tr>
             <td>姓名</td>
@@ -14,6 +41,7 @@
                 <input type="text" name="name">
             </td>
         </tr>
+
         <tr>
             <td>出生日期</td>
             <td>
@@ -46,12 +74,14 @@
                 </select>
             </td>
         </tr>
+
         <tr>
             <td>所在地区</td>
             <td><input type="text" value="天津市"></td>
         </tr>
+
         <tr>
-            <td><em><del>黑客</del></em>劣迹</td>
+            <td><font id="hacker">黑客</font>劣迹</td>
             <td>
                 <input type="checkbox" name="badthing" checked="checked"> 威胁
                 <input type="checkbox" name="badthing" checked="checked"> 恐吓
@@ -61,6 +91,7 @@
                 <input type="checkbox" name="badthing" checked="checked"> 干扰通信自由
             </td>
         </tr>
+
         <tr>
             <td></td>
             <td>
@@ -72,37 +103,44 @@
                 <input type="checkbox" name="badthing" checked="checked"> 控制天气 
             </td>
         </tr>
+
         <tr>
             <td></td>
-            <td><input type="text" value="请补充"><td/>
+            <td><input type="text" value="请补充"></td>
         </tr>
+
         <tr>
             <td>捐款金额</td>
             <td><input type="text" value="不少于入群费80元"></td>
         </tr>
+
         <tr>
             <td></td>
             <td>
                 <input type="submit" value="立即捐款!">
             </td>
         </tr>
+
         <tr>
             <td></td>
             <td>
-                <input type="checkbox" checked="checked"> 我同意所有捐款全部交给<font color="#FFD700"><strong>林大师</strong></font>!支持与<em><del>黑客</del></em>的英勇斗争
+                <input type="checkbox" checked="checked"> 我同意所有捐款全部交给<font id="master">林大师</font>!支持与<font id="hacker">黑客</font>的英勇斗争
             </td>
         </tr>
+
         <tr>
             <td></td>
             <td>
                 <h2>我承诺</h2>
                 <ul>
-                    <li>支持<font color="#FFD700"><strong>林大师</strong></font>的所有行动</li>
-                    <li>自觉揭发<em><del>黑客</del></em>的可恶行径</li>
-                    <li>每天按时听<font color="#FFD700"><strong>林大师</strong></font>演唱</li>
+                    <li>支持<font id='master'>林大师</font>的所有行动</li>
+                    <li>自觉揭发<font id="hacker">黑客</font>的可恶行径</li>
+                    <li>每天按时听<font id='master'>林大师</font>演唱</li>
                 </ul>
             </td>
         </tr>
+
+        
     </table>
 </body>
 </html>
